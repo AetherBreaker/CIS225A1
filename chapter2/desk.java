@@ -1,7 +1,24 @@
 package chapter2;
 
-public class desk {
+import java.util.EnumMap;
+
+public class Desk {
+    private float length;
+    private float width;
+
+    private float price;
+    enum Material {
+        MAHOGANY, OAK, PINE
+    }
+
+
+    public Desk(float length, float width, Material material) {
+        this.length = length;
+        this.width = width;
+        this.material = material;
+    }
+
     public static void main(String[] args) {
-        System.out.println("This is a desk");
+        Desk desk = new Desk(1.0f, 2.0f, Material.MAHOGANY);
     }
 }
