@@ -6,7 +6,7 @@ public class Desk {
     private Material material;
     private float price;
 
-    public enum Material {
+    private enum Material {
         MAHOGANY, OAK, PINE
     }
 
@@ -17,8 +17,9 @@ public class Desk {
     }
 
     public static void main(String[] args) {
-        float desklen = Float.parseFloat(System.console().readLine("Enter desk length: "));
-        float deskwid = Float.parseFloat(System.console().readLine("Enter desk width: "));
-        Desk desk = new Desk(desklen, deskwid, Material.MAHOGANY);
+        Desk desk = new Desk(
+                Float.parseFloat(System.console().readLine("Enter desk length: ")),
+                Float.parseFloat(System.console().readLine("Enter desk width: ")),
+                Material.MAHOGANY);
     }
 }
