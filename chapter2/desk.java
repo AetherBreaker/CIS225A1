@@ -8,18 +8,9 @@ public class Desk {
     private int drawers;
     private int material;
 
-    <<<<<<<HEAD
-
     public Desk(int ordernum, String ordername, float length, float width, int drawers, int material) {
         this.orderNum = ordernum;
         this.orderName = ordername;
-=======
-    private enum Material {
-        MAHOGANY, OAK, PINE
-    }
-
-    public Desk(float length, float width, Material material) {
->>>>>>> c0eb76949d62e2c04421e84d2bb2decee3dd3886
         this.length = length;
         this.width = width;
         this.drawers = drawers;
